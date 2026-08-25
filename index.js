@@ -1,56 +1,130 @@
+// console.log("hello I m using js");
 
- /*console.log("Hello, World!");
+// function sum(a,b) {
+//     return a+b;
+// }
 
-const sum = function(a, b) {
-    return a + b;
-};
-sum(5, 10);
+// let a = sum(2,4);
+// console.log(a);
 
-const sqrtsum = function(a, b) {
-    return Math.sqrt(sum(a, b));
-}
+// function sqrt(a,b){
+//     return Math.sqrt(a,b);
+// }
 
-sqrtsum(5, 10); */
+// console.log(sqrt(2,3));
 
- //const sum = (a,b) => {return a+b;};
- 
- 
- //IIFE (Immediately Invoked Function Expression)
+// const sum1 = function(a,b){
+//     return(a+b);
+// }
+// console.log(sum1(3,4));
 
- //(() = > {
-   // console.log("hello")
- //})();
+// const sum2=(a,b)=>{return a+b};
+// console.log(sum2(5,6));
 
- //let a = 10;
- t//ypeof a; //number
- //if(a<10){
-   // let a = 20;
-    //console.log(a); //20
- //}
- //console.log(a); //10
 
- //callback function
-  //function sum (a, b, ){}
+//IIFE
+// (() => {
+//     console.log("heyyy using IIFE")
+// })();
 
-//  function msgWithSum(callback, msg){
-    //let result = callback(20,40);
-  //  console.log(msg);
+// let a=34;
+// if(a<40){
+//     let a=40;
+//     console.log("value of a inside block = "+a);
+// }
+// console.log("value of a outside block = "+a);
+
+//callback
+// function sum(a,b){
+//     return a+b;
+// }
+
+// function msgwithsum(clbk,msg){
+//     const result = clbk(40,50);
+//     console.log("Hii," +msg+ " your result is = "+result);
+// }
+// msgwithsum(sum,"rahul")
+
+// function login(error,msg){
+//     if(error){
+//         console.log("Error is : "+error);
+//     }
+//     else{
+//         console.log(msg);
+//     }
+// }
+
+// function loginHandler(username,password,clbk){
+//     if(username=="rahulsingh157" && password=="123455"){
+//         clbk(null,"login Success")
+//     }else{
+//         clbk("username or password is incorrect", null)
+//     }
+// }
+
+// loginHandler("rahulsingh157", "123455", login);
+
+//console.log("one");
+//setTimeout(()=>{console.log("Two")},1000)
+//console.log("three");
+
+//console.log("one");
+  //for(i = 0;i<1000;i++){
+    //console.log("i="+1);
   //}
- // msgWithSum(sum,"rahul");
+  //console.log("Two");
 
- function login(error, msg){
-    if(error){
-        console.log("Error: "+error);
-    }else{
-        console.log("Success: "+msg);
-    }
-}
 
-function loginHandler(username, password,clbk ){
-    if(username == "ptomer" && password == "1234"){
-        clbk(null, " Login Sucessfull")
-    }else{
-        clbk("Invalid username or password", null);
-    }
+  //const container = document.getElementById('container');
+  
+  //const button = document.createElement('button');
+  
+   
+   // const educationDetails = document.createElement('p');
+    //educationDetails.innerHTML = '<strong>Degree:</strong> B.Tech<br/><strong>Year: </strong> 3rd Year<br/><strong>College:</strong> ABES Engineering College';
+    //resumeDiv.appendChild(educationDetails);
+    
+   //const skills = document.create
+    
+
+    //const contactDetails = document.createElement('p');
+  //  contactDetails.innerHTML = '<strong>Email:</strong> rishuu@example.com<br/><strong>Phone:</strong> 9340950818';
+    //resumeDiv.appendChild(contactDetails);
+  
+   // container.appendChild(resumeDiv);
+    
+    //const newBtn = document.createElement('button');
+    //newBtn.innerText = 'Generate Again';
+    //newBtn.addEventListener('click', ping);
+    //container.appendChild(newBtn);
+  //}
+  
+ // button.addEventListener('click', ping);
+
+
+  //function ping(){
+    //try{
+      //loader.innerHTML = "Loading file......"
+      //const welcome = document.createElement("h2");
+
+      //container.appendChild()
+      //h1.style.backgroundcolor='cyan';
+      //h1.stytle.color ='red';
+
+
+   // }
+  //}
+
+  const container = document.getElementById("container");
+const image = document.createElement("img");
+image.src = "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/using_the_w3c_dom_level_1_core-doctree.jpg";
+image.setAttribute("height",200);
+image.setAttribute("width",200);
+
+function showResume(){
+
+
+        container.appendChild(image);
+    
+    
 }
- loginHandler("ptomer", "1234", login);
