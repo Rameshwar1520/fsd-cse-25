@@ -10,7 +10,7 @@ async function fetchData() {
         const serverData = await fetch("https://fakestoreapi.com/products/");
         const jsonData = await serverData.json();
 
-        let table = `<table border="2px">
+        let table = `<table border="">
             ${jsonData.map((item) => `
                 <tr>
                     <td>${item.id}</td>
