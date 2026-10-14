@@ -1,22 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div>
-      <h2> welcome to Homepage</h2>
-      <nav>
-        <ul>
-            <li>
-                <Link to="/login">Login</Link>
-            </li>
-            <li>
-                <Link to="/register">Register</Link>
-            </li>
-            <li>
-                <Link to="/dashboard">Dashboard</Link>
-            </li>
-        </ul>
+    <div className="text-center py-5">
+      <h1 className="mb-3">Welcome to the homepage</h1>
+      <p className="text-muted">Use the navigation bar to log in or create an account.</p>
+      <nav className="nav justify-content-center mt-4">
+        <NavLink className="nav-link" to="/login">
+          Login
+        </NavLink>
+        <NavLink className="nav-link" to="/registration">
+          Registration
+        </NavLink>
       </nav>
     </div>
   )
